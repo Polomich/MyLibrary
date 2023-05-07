@@ -1,0 +1,233 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <title>My Library</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="stylesheet.css">
+  <script src="index.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico" rel="stylesheet">
+</head>
+
+<body onload="createEvents()">
+  <div class="window">
+    <div class="triangle"></div>
+    <div id="beam2" class="triangle"></div>
+    <div id="beam3" class="triangle"></div>
+    <div id="beam4" class="triangle"></div>
+    <div id="beam5" class="triangle"></div>
+  </div>
+
+  <div class="circle circle-small" style="top:-450px; left:150px;"></div>
+  <div class="circle move2" style="top:0px; left:350px;"></div>
+  <div class="circle circle-small" style="top:200px;"></div>
+  <div class="circle circle-big move2" style="top:-50px; left:-50px;"></div>
+  <div class="circle" style="top:100px;"></div>
+  <div class="circle circle-big move2" style="top:-10px; left:800px;"></div>
+  <div class="circle circle-small" style="left:700px; top:-20px;"></div>
+
+  <section id="fs1" class="full-shelf">
+    <div class="books-container">
+      <div class="book book5"></div>
+      <div class="book book1"></div>
+      <div class="book book3"></div>
+      <img class="objects" src="resources/matry.png" alt="Matryochka (Russian Doll)">
+      <div class="book book2"></div>
+      <div id="click-HT" class="book book7 clickable"></div>
+      <img class="objects" src="resources/mug.png" alt="mug with 2 bffs">
+    </div>
+    <div class="shelf"></div>
+  </section>
+
+  <section id="fs2" class="full-shelf">
+    <div class="books-container">
+      <div id="click-Sims" class="book dvd dvd3 clickable"></div>
+      <div class="book dvd dvd2"></div>
+      <div class="book dvd "></div>
+      <div class="book book5"></div>
+      <div class="book book8"></div>
+      <div class="book book2"></div>
+      <div id="click-IW" class="book book4 clickable"></div>
+      <div class="book book5"></div>
+      <div class="book book1"></div>
+    </div>
+    <div class="shelf"></div>
+  </section>
+
+  <section id="fs3" class="full-shelf">
+    <div class="books-container">
+      <img class="objects" src="resources/hermione.png" alt="Yule ball Hermione FunkoPop">
+      <div class="book book1"></div>
+      <div class="book book2"></div>
+      <div class="book book5"></div>
+      <div class="book book8"></div>
+      <div id="click-OLS" class="book book6 clickable"></div>
+      <div class="book book5"></div>
+      <div class="book book3"></div>
+      <img class="objects" src="resources/eiffel.png" alt="Eiffel Tower miniature">
+    </div>
+    <div id="shelf3" class="shelf"></div>
+  </section>
+
+  <section id="fs4" class="full-shelf">
+    <img id="boombox" class="objects" src="resources/boombox.png" alt="pink boombox">
+    <img id="flower" class="objects clickable" src="resources/sunflower.png" alt="sunflower in a pot">
+    <div class=" bookcase">
+      <div id="topcase" class="bookshelf"></div>
+      <div id="cheat-case" class="bookshelf case"></div>
+
+      <div class="games-container gt1">
+        <div id="click-CTN" class="game game1 objects clickable"></div>
+        <div id="click-MPL" class="game game2 objects clickable"></div>
+      </div>
+      <div id="case1" class="bookshelf case"></div>
+
+      <div class="games-container gt2">
+        <div id="click-MPC" class="game game3 objects clickable "></div>
+        <div class="game game4 objects"></div>
+        <div class="game game5 objects"></div>
+      </div>
+      <div id="case2" class="bookshelf case"></div>
+
+      <div id="case3" class="bookshelf case"></div>
+      <div id="rightcase" class="bookshelf"></div>
+      <div id="leftcase" class="bookshelf"></div>
+      <div id="botcase" class="bookshelf"></div>
+    </div>
+  </section>
+
+  <section id="popup">
+    <div id="closeX" class="clickable">
+      <p>x</p>
+    </div>
+    <article id="HT" class="hide">
+      <h2>Heavenly Tyrant</h2>
+      <div class="full-info">
+        <p class="subtitle">(Iron Widow #2) by Xiran Jay Zhao</p>
+        <p>"Zetian, now ruler of Chang’an, must balance dangerous politics with
+          her quest for revenge in the sequel to the #1 New York Times bestseller
+          Iron Widow, a blend of Chinese history and mecha science fiction."</p>
+        <p class="source"><a href="https://www.goodreads.com/en/book/show/52934483-heavenly-tyrant" target="_blank">- Goodreads</a></p>
+      </div>
+    </article>
+    <article id="IW" class="hide">
+      <h2>Iron Widow</h2>
+      <div class="full-info">
+        <p class="subtitle">(Iron Widow #1) by Xiran Jay Zhao</p>
+        <p>"The boys of Huaxia dream of pairing up with girls to pilot Chrysalises,
+          giant transforming robots that can battle the mecha aliens that lurk
+          beyond the Great Wall. It doesn't matter that the girls often die
+          from the mental strain.</p>
+        <p>When 18-year-old Zetian offers herself up as a concubine-pilot, it's
+          to assassinate the ace male pilot responsible for her sister's death.
+          But she gets her vengeance in a way nobody expected—she kills him through
+          the psychic link between pilots and emerges from the cockpit unscathed.
+          She is labeled an Iron Widow, a much-feared and much-silenced kind of
+          female pilot who can sacrifice boys to power up Chrysalises instead.​"</p>
+        <p class="source"><a href="https://www.goodreads.com/book/show/52459864-iron-widow?ac=1&from_search=true&qid=nHtvU8f10x&rank=1" target="_blank">- Goodreads</a></p>
+      </div>
+    </article>
+    <article id="Sims" class="hide">
+      <h2>The Sims 3</h2>
+      <div class="full-info">
+        <p class="subtitle">Simulation Video Game</p>
+        <p>"The freedom of The Sims 3 will inspire you with endless creative
+          possibilities and amuse you with unexpected moments of surprise and mischief!</p>
+        <p>Just like in your real life home, you can put items wherever you want,
+          but you can also use a grid to help you place objects just right. Be as
+          outlandish or as functional as you want; your only limit is your imagination​.</p>
+        <p>Powerful character design tools let you make exactly who you want. Robust
+          building features allow for precise control over your Sims' home, and your
+          Sims can explore a huge neighborhood to their heart’s content. Day or night,
+          work or play,the world is your Sims' oyster."
+        </p>
+        <p class="source"><a href="https://www.ea.com/en-ca/games/the-sims/the-sims-3" target="_blank">- Electronics Arts Home</a></p>
+      </div>
+    </article>
+    <article id="OLS" class="hide">
+      <h2>One Last Stop</h2>
+      <div class="full-info">
+        <p class="subtitle">by Casey McQuiston</p>
+        <p>"From the New York Times bestselling author of Red, White & Royal Blue
+          comes a new romantic comedy that will stop readers in their tracks...</p>
+        <p>For cynical twenty-three-year-old August, moving to New York City is
+          supposed to prove her right: that things like magic and cinematic love
+          stories don’t exist, and the only smart way to go through life is alone.
+          She can’t imagine how waiting tables at a 24-hour pancake diner and moving
+          in with too many weird roommates could possibly change that. And there’s
+          certainly no chance of her subway commute being anything more than a daily
+          trudge through boredom and electrical
+          failures. But then, there’s this gorgeous girl on the train."</p>
+        <p class="source"><a href="https://www.goodreads.com/book/show/54860443-one-last-stop" target="_blank">- Goodreads</a></p>
+      </div>
+    </article>
+    <article id="CTN" class="hide">
+      <h2>CATAN</h2>
+      <div class="full-info">
+        <p class="subtitle">The Settlers of Catan boardgame</p>
+        <p>"In CATAN (formerly The Settlers of Catan), players try to be the dominant
+          force on the island of Catan by building settlements, cities, and roads. On
+          each turn dice are rolled to determine what resources the island produces. Players build
+          by spending resources (sheep, wheat, wood, brick and ore) that are depicted
+          by these resource cards; each land type, with the exception of the unproductive
+          desert, produces a specific resource: hills produce brick, forests produce wood,
+          mountains produce ore, fields produce wheat, and pastures produce sheep."</p>
+        <p class="source"><a href="https://boardgamegeek.com/boardgame/13/catan" target="_blank">- boardgamegeek.com</a></p>
+      </div>
+    </article>
+    <article id="MPC" class="hide">
+      <h2>Magic Puzzle Company</h2>
+      <div class="full-info">
+        <p class="subtitle">A Series of Jigsaw Puzzles</p>
+        <p>"Series One from The Magic Puzzle Company is a set of three all-new
+          1,000-piece jigsaw puzzles with original art and a magical surprise at the end.</p>
+        <p>We set out to create the most entertaining puzzles you’ve ever done by
+          combining the traditional jigsaw puzzle experience with ideas from the worlds
+          of tabletop games and magic. Magic Puzzles are the most-backed and highest-funded puzzles
+          ever on Kickstarter, with $3 million raised from over 60,000 backers around the world."</p>
+        <p class="source"><a href="https://magicpuzzlecompany.com/" target="_blank">- Magic Puzzle Company</a></p>
+      </div>
+    </article>
+    <article id="MPL" class="hide">
+      <h2>Monopoly</h2>
+      <div class="full-info">
+        <p class="subtitle">Ready to break up the family?</p>
+        <p>"This version of the Monopoly game welcomes the Rubber Ducky, Tyrannosaurus
+          Rex, and Penguin into its family of tokens. Choose your token, place it
+          on GO! and roll the dice to own it all! There can be only one winner in
+          the Monopoly game. Will it be you?"</p>
+        <p class="source"><a href="https://monopoly.hasbro.com/en-ca/product/monopoly-game:7EABAF97-5056-9047-F577-8F4663C79E75" target="_blank">- Hasbro</a></p>
+      </div>
+    </article>
+    <article id="bees" class="hide">
+      <h2>Save the Bees</h2>
+      <div class="full-info">
+        <p class="subtitle">Plant more sunflowers!</p>
+        <p>"Redeem your free seeds and plant! Bees need wildflower pollen and nectar
+          to stay happy and healthy so planting sunflowers, a variety of wildflowers,
+          is a fun and easy way to help the bees."</p>
+        <p class="source"><a href="https://www.cheerios.ca/bringbackthebees/" target="_blank">- Cheerios</a></p>
+      </div>
+    </article>
+  </section>
+
+
+  <footer>
+    <div class="footdiv">
+      <p>Written by Michelle Polonsky 2022</p>
+      <p>Template by Anna Pawl on:
+        <a href="https://codepen.io/annampawl/pen/xxYgMXb" target="_blank">https://codepen.io/annampawl/pen/xxYgMXb</a>
+      </p>
+      <p>Font by:
+        <a href="https://fonts.google.com/specimen/Pacifico?category=Sans+Serif,Display,Handwriting,Monospace&preview.text=one%20last%20stop%20%20by%20casey%20mccinston&preview.text_type=custom#styles" target="_blank"> Vernon Adams, Jacques Le
+          Bailly, Botjo
+          Nikoltchev, and Ani Petrova</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
